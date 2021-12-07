@@ -38,6 +38,7 @@ async def on_message(message):
             "guoba! guoba! guoba!",
             "hello :D",
             "hello :smirk:",
+            "guoba is the pyro archon"
         ]
         response = random.choice(guoba_options)
         await message.channel.send(response)
@@ -251,11 +252,11 @@ async def panic_error(ctx, error):
 @bot.group(name='phrase', invoke_without_command=True, help='displays a random phrase.')  # phrase() parent command
 async def phrase(ctx):
     thirst2 = [
-        'zhongli ass so phat',
-        'zhongli archon skin WHEN bih',
+        'zhongli old man',
+        'zhongli archon skin WHEN',
         'GUOBA.....bot?',
         'GUOBAPOT GUOBAPOT GUOBAPOT',
-        'floyd is hot ur all just cowards',
+        'ooOoooOOoOooOOO',
         'me when floyd: :weary:'
     ]
 
@@ -266,8 +267,8 @@ async def phrase(ctx):
 @phrase.command(name='zhongli', help='sends a phrase about zhongli')
 async def zhongli_phrase(ctx):
     thirst2 = [
-        'zhongli ass so phat',
-        'zhongli archon skin WHEN bih'
+        'zhongli old man',
+        'zhongli archon skin WHEN'
     ]
 
     response = random.choice(thirst2)
@@ -288,7 +289,7 @@ async def guoba_phrase(ctx):
 @phrase.command(name='floyd', help='sends a phrase about floyd')
 async def floyd_phrase(ctx):
     thirst2 = [
-        'floyd is hot ur all just cowards',
+        'oooOoooOooOoOOoOo',
         'me when floyd: :weary:'
     ]
 
